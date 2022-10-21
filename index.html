@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-s'cA'le=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Matriz</title>
+</head>
+<body>
+
+    <script>
+
+        // 1 8 p 8 5 'S' 9 7 6 1 8 9 a 5 'S' 9 7 6 1 8 9 h a b i t a t 8 9 
+        // 1 8 l 8 5 'S' 9 7 6 1 8 9 n 5 'S' 9 7 6 e 8 9 8 5 'S' 9 7 6 1 8 9 
+        // 1 8 a m b i e n t e 8 9 i 5 'S' 9 7 6 c 8 9 8 5 'S' 9 7 6 1 8 9 
+        // 1 8 n 8 5 'S' 9 7 6 1 8 9 m 5 'S' 9 7 6 o 8 9 8 5 'S' 9 7 6 1 8 9 
+        // n a t u r e z a 6 1 8 9 a 5 'S' 9 7 6 l 8 9 8 5 'S' f l o r a 9 
+        // 1 8 a 8 5 'S' 9 g 6 1 8 9 l 5 'S' 9 b i o e s f e r a 7 6 1 8 9 
+        // 1 8 9 8 5 'S' 9 u 6 1 8 9 8 5 'S' 9 7 6 g 8 9 8 5 'S' u 7 6 1 8 9 
+        // 1 8 9 8 5 'S' 9 a 6 1 8 9 8 5 'S' 9 7 6 i 8 9 8 5 'S' n 7 6 1 8 9 
+        // 1 8 9 8 5 'S' 9 7 6 1 8 9 8 5 'S' 9 7 6 a 8 9 8 5 'S' a 7 6 1 8 9 
+
+        // ambiente, animal, biosfera, ecologia, fauna, flora, habitat, natureza, planta, água.
+
+        matriz = new Array;
+        matriz = [
+                  [['T', 'cB'], ['G', 'cB'], ['p', 'cA'], ['G', 'cB'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'], ['W', 'cB'], ['Y', 'cB'], ['T', 'cB'], ['G', 'cB'], ['P', 'cB'], ['a', 'cA'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'], ['W', 'cB'], ['Y', 'cB'], ['T', 'cB'], ['G', 'cB'], ['P', 'cB'], ['h', 'cA'], ['a', 'cA'], ['b', 'cA'], ['i', 'cA'], ['t', 'cA'], ['a', 'cA'], ['t', 'cA'], ['G', 'cB'], ['P', 'cB']],
+                  [['T', 'cB'], ['G', 'cB'], ['l', 'cA'], ['G', 'cB'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'], ['W', 'cB'], ['Y', 'cB'], ['T', 'cB'], ['G', 'cB'], ['P', 'cB'], ['n', 'cA'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'], ['W', 'cB'], ['Y', 'cB'], ['e', 'cA'], ['G', 'cB'], ['P', 'cB'], ['G', 'cB'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'],['W', 'cB'], ['Y', 'cB'], ['T', 'cB'], ['G', 'cB'], ['P', 'cB']],
+                  [['T', 'cB'], ['G', 'cB'], ['a', 'cA'], ['m', 'cA'], ['b', 'cA'], ['i', 'cA'], ['e', 'cA'], ['n', 'cA'], ['t', 'cA'], ['e', 'cA'], ['G', 'cB'], ['P', 'cB'], ['i', 'cA'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'], ['W', 'cB'], ['Y', 'cB'], ['c', 'cA'], ['G', 'cB'], ['P', 'cB'], ['G', 'cB'], ['F', 'cB'],['Q', 'cB'], ['P', 'cB'], ['W', 'cB'], ['Y', 'cB'], ['T', 'cB'], ['G', 'cB'], ['P', 'cB']],
+                  [['T', 'cB'], ['G', 'cB'], ['n', 'cA'], ['G', 'cB'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'], ['W', 'cB'], ['Y', 'cB'], ['T', 'cB'], ['G', 'cB'], ['P', 'cB'], ['m', 'cA'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'], ['W', 'cB'], ['Y', 'cB'], ['o', 'cA'], ['G', 'cB'], ['P', 'cB'], ['G', 'cB'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'],['W', 'cB'] , ['Y', 'cB'], ['T', 'cB'], ['G', 'cB'], ['P', 'cB']],
+                  [['n', 'cA'], ['a', 'cA'], ['t', 'cA'], ['u', 'cA'], ['r', 'cA'], ['e', 'cA'], ['z', 'cA'], ['a', 'cA'], ['Y', 'cB'], ['T', 'cB'], ['G', 'cB'], ['P', 'cB'], ['a', 'cA'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'], ['W', 'cB'], ['Y', 'cB'], ['l', 'cA'], ['G', 'cB'], ['P', 'cB'], ['G', 'cB'], ['F', 'cB'], ['Q', 'cB'], ['f', 'cA'], ['l', 'cA'], ['o', 'cA'], ['r', 'cA'], ['a', 'cA'], ['P', 'cB']],
+                  [['T', 'cB'], ['G', 'cB'], ['a', 'cA'], ['G', 'cB'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'], ['g', 'cA'], ['Y', 'cB'], ['T', 'cB'], ['G', 'cB'], ['P', 'cB'], ['l', 'cA'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'], ['b', 'cA'], ['i', 'cA'], ['o', 'cA'], ['e', 'cA'], ['s', 'cA'], ['f', 'cA'], ['e', 'cA'], ['r', 'cA'], ['a', 'cA'], ['W', 'cB'], ['Y', 'cB'], ['T', 'cB'], ['G', 'cB'], ['P', 'cB']],
+                  [['T', 'cB'], ['G', 'cB'], ['P', 'cB'], ['G', 'cB'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'], ['u', 'cA'], ['Y', 'cB'], ['T', 'cB'], ['G', 'cB'], ['P', 'cB'], ['G', 'cB'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'], ['W', 'cB'], ['Y', 'cB'], ['g', 'cA'], ['G', 'cB'], ['P', 'cB'], ['G', 'cB'], ['F', 'cB'], ['Q', 'cB'], ['u', 'cA'], ['W', 'cB'], ['Y', 'cB'], ['T', 'cB'], ['G', 'cB'], ['P', 'cB']],
+                  [['T', 'cB'], ['G', 'cB'], ['P', 'cB'], ['G', 'cB'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'], ['a', 'cA'], ['Y', 'cB'], ['T', 'cB'], ['G', 'cB'], ['P', 'cB'], ['G', 'cB'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'], ['W', 'cB'], ['Y', 'cB'], ['i', 'cA'], ['G', 'cB'], ['P', 'cB'], ['G', 'cB'], ['F', 'cB'], ['Q', 'cB'], ['n', 'cA'], ['W', 'cB'], ['Y', 'cB'], ['T', 'cB'], ['G', 'cB'], ['P', 'cB']],
+                  [['T', 'cB'], ['G', 'cB'], ['P', 'cB'], ['G', 'cB'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'], ['W', 'cB'], ['Y', 'cB'], ['T', 'cB'], ['G', 'cB'], ['P', 'cB'], ['G', 'cB'], ['F', 'cB'], ['Q', 'cB'], ['P', 'cB'], ['W', 'cB'], ['Y', 'cB'], ['a', 'cA'], ['G', 'cB'], ['P', 'cB'], ['G', 'cB'], ['F', 'cB'], ['Q', 'cB'], ['a', 'cA'], ['W', 'cB'], ['Y', 'cB'], ['T', 'cB'], ['G', 'cB'], ['P', 'cB']]
+                 ];
+
+
+                 document.write("<table border='1'>");
+            
+            for(i = 0; i < matriz.length; i++) {
+                document.write('<tr>');
+                    for(j = 0; j < matriz[i].length; j++) {
+                        document.write("<td width='30' align='center' class='" + matriz[i][j][1] + "'>" + matriz[i][j][0] + "</td>");
+                    }
+                document.write('</tr>');
+            }
+        
+        
+         document.write("</table>");
+
+    </script>
+
+</body>
+</html>
